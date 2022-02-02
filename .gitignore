@@ -1,9 +1,9 @@
 images/about-img.png
-*.png
-*.jpg
-*.jpeg
+# *.png
+# *.jpg
+# *.jpeg
 *.xlsm
 *.pdf
-*.jfif
+# *.jfif
 *.exe
 teste
