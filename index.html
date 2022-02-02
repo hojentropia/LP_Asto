@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asto Cursos</title>
+
+
+    <!-- Inserindo o Jquery no documento -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+<!-- header section starts -->
+<header>
+
+    <a href="#" class="logo"><span>AstoCursos</span></a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">Nossos Cursos</a>
+        <a href="#about">Sobre</a>
+        <a href="#review">Reviews</a>
+        <a href="#pricing">Planos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+</header>
+<!-- header section ends -->
+
+
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="content">
+
+
+        <h3 id= "typing" ></h3>
+
+        <script> 
+
+            var i = 0;
+            var txt = "Está pronto para mudar a sua carreia para sempre?"
+            var speed = 50; 
+                
+            function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typing").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+
+            }
+
+            typeWriter()
+        </script>
+
+        
+        
+        <a href="#pricing" class="btn">Estou Pronto!</a>
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.png" alt="">
+    </div>
+
+</section>
+<!-- home section ends -->
+
+
+
+
+
+<!-- features section starts  -->
+<section class="features" id="features">
+
+    <h1 class="heading"> Nossos Cursos </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/f-icon1.png" alt="">
+            <h3>Data Engineering</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">Saber Mais</a>
+        </div>
+
+        <div class="box">
+            <img src="images/f-icon2.png" alt="">
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">Saber Mais</a>
+        </div>
+
+        <div class="box">
+            <img src="images/f-icon3.png" alt="">
+            <h3>Web/Mobile Apps</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">Saber Mais</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- features section ends -->
+
+
+
+
+
+<!-- about section starts  -->
+<section class="about" id="about">
+
+    <h1 class="heading"> Sobre Nós </h1>
+
+    <div class="column">
+
+        <div class="image">
+            <img src="images/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Cursos práticos para você alavancar suas habilidades em programação</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
+            <div class="buttons">
+                <a href="#" class="btn"> Inicie Agora </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- about section ends -->
+
+
+
+<!-- review section starts  -->
+<section class="review" id="review">
+
+    <h1 class="heading"> O que os nossos alunos estão falando: </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic1.jfif" alt="">
+                <h3>Tassia</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic2.jpg" alt="">
+                <h3>Diego</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- review section ends -->
+
+
+
+
+
+<!-- pricing section starts  -->
+<section class="pricing" id="pricing">
+
+    <h1 class="heading"> Nossos Planos </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">Básico</h3>
+            <div class="price">R$10<span>/Mensal</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> 3 Tutoriais por mês </li>
+                <li> <i class="fas fa-check"></i> FAQ Tecnico </li>
+                <li> <i class="fas fa-times"></i> Cursos Ilimitados </li>
+            </ul>
+            <a href="#" class="btn">Assinar</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Padrão</h3>
+            <div class="price">R$20<span>/Mensal</span></div>
+            <ul>
+                <li> <i class="fas fa-check"></i> 3 Tutoriais por mês </li>
+                <li> <i class="fas fa-check"></i> FAQ Tecnico </li>
+                <li> <i class="fas fa-check"></i> Cursos Ilimitados </li>
+            </ul>
+            <a href="#" class="btn">Assinar</a>
+        </div>
+    </div>
+
+</section>
+<!-- pricing section ends -->
+
+
+
+
+<!-- contact section starts  -->
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="images/contact-img.png" alt="">
+    </div>
+
+
+    <!-- action="https://formspree.io/f/xyyoejrl" method="POST" -->
+    <form 
+    >
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+            <input type="text" required name="name">
+            <label>name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" required name="email">
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required name="phone">
+            <label>phone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <label>mensagem (Opcional)</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+</section>
+
+<p class="credit">made with &#128151 by hojentropia in La Rochelle </p>
+
+</body>
+</html>
