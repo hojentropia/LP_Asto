@@ -93,7 +93,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color:var(--pink);
+    color:var(--purple);
 }
 
 header input{
@@ -172,12 +172,6 @@ header label{
     padding: 1rem 0;
 }
 
-.about{
-    background:url(../images/about-bg.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 3rem;
-}
 
 .about .column{
     display: flex;
@@ -213,64 +207,6 @@ header label{
     margin-left: 2rem;
 }
 
-.newsletter{
-    text-align: center;
-    padding:5rem 1rem;
-    background:url(../images/subscribe-bg.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.newsletter h3{
-    color:#fff;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-.newsletter p{
-    color:#fff;
-    font-size: 1.6rem;
-    margin:2rem auto;
-    width:70rem;
-}
-
-.newsletter form{
-    display: flex;
-    max-width: 70rem;
-    border:.2rem solid #fff;
-    padding:.5rem;
-    border-radius: 5rem;
-    margin:2rem auto;
-    height:5.5rem;
-}
-
-.newsletter form input[type="email"]{
-    padding:0 2rem;
-    font-size: 1.7rem;
-    background:none;
-    width:100%;
-    color:#fff;
-    text-transform: none;
-    background:none;
-}
-
-.newsletter form input[type="email"]::placeholder{
-    color:#eee;
-    text-transform: capitalize;
-}
-
-.newsletter form input[type="submit"]{
-    background:#fff;
-    width:20rem;
-    font-size: 1.7rem;
-    border-radius: 5rem;
-    cursor: pointer;
-}
-
-.newsletter form input[type="submit"]:hover{
-    color:var(--pink);
-}
-
 .review .box-container{
     display: flex;
     align-items: center;
@@ -294,7 +230,7 @@ header label{
     position: absolute;
     top:1rem; right:2rem;
     font-size: 8rem;
-    color:var(--pink);
+    color:var(--purple);
     opacity: .3;
 }
 
@@ -307,7 +243,7 @@ header label{
 }
 
 .review .box-container .box .user h3{
-    color:var(--pink);
+    color:var(--purple);
     font-size: 2rem;
 }
 
@@ -344,7 +280,7 @@ header label{
 
 .pricing .box-container .box:nth-child(2),
 .pricing .box-container .box:hover{
-    border:.2rem solid var(--pink);
+    border:.2rem solid var(--purple);
 }
 
 .pricing .box-container .box .title{
@@ -355,7 +291,7 @@ header label{
 
 .pricing .box-container .box .price{
     font-size: 4rem;
-    color:var(--pink);
+    color:var(--purple);
     padding:1rem 0;
 }
 
@@ -450,7 +386,7 @@ header label{
 .contact form .inputBox textarea:valid ~ label{
     top:-.5rem;
     font-size: 1.5rem;
-    color:var(--pink);
+    color:var(--purple);
 }
 
 .credit{
@@ -539,11 +475,6 @@ header label{
     .about{
         background-position: right;
     }
-
-    .newsletter p{
-        width:auto;
-    }
-
 }
 
 @media (max-width:450px){
